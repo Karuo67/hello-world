@@ -17,3 +17,4 @@ def ping():
     host = request.args.get("host")
     # Injection de commande : entrée utilisateur passée au shell
     return subprocess.check_output("ping -c 1 " + host, shell=True)
+Ca va faire boom
